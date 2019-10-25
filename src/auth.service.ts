@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 import { LoginProvider } from './entities/login-provider';
 import { SocialUser } from './entities/user';
+import {Injectable} from '@angular/core';
 
 export interface AuthServiceConfigItem {
   id: string;
