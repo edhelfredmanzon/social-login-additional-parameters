@@ -35,10 +35,10 @@
   "bugs": {
     "url": "https://github.com/edhelfredmanzon/social-login-additional-parameters/issues"
   },
-  "main": "angular5-social-login.umd.js",
-  "module": "angular5-social-login.js",
-  "jsnext:main": "angular5-social-login.js",
-  "typings": "angular5-social-login.d.ts",
+  "main": "social-login-additional-parameters.umd.js",
+  "module": "social-login-additional-parameters.js",
+  "jsnext:main": "social-login-additional-parameters.js",
+  "typings": "social-login-additional-parameters.d.ts",
   "peerDependencies": {
     "@angular/common": "^5.0.0",
     "@angular/core": "^5.0.0",
