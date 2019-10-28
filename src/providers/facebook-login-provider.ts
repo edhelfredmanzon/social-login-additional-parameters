@@ -31,6 +31,7 @@ export class FacebookLoginProvider extends BaseLoginProvider {
             if (response.status === 'connected') {
               const accessToken = FB.getAuthResponse()['accessToken'];
               FB.api('/me?fields=name,email,picture,first_name,last_name', (res: any) => {
+                console.log(res);
                 resolve(FacebookLoginProvider.drawUser(Object.assign({}, {token: accessToken}, res)));
               });
             }
@@ -57,6 +58,7 @@ export class FacebookLoginProvider extends BaseLoginProvider {
         if (response.authResponse) {
           const accessToken = FB.getAuthResponse()['accessToken'];
           FB.api('/me?fields=name,email,picture,last_name,first_name', (res: any) => {
+            console.log(res);
             resolve(FacebookLoginProvider.drawUser(Object.assign({}, {token: accessToken}, res)));
           });
         }
