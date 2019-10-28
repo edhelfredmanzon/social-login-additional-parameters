@@ -47,8 +47,8 @@ export class FacebookLoginProvider extends BaseLoginProvider {
     user.email = response.email;
     user.token = response.token;
     user.image = 'https://graph.facebook.com/' + response.id + '/picture?type=normal';
-    user.first_name = response.first_name;
-    user.last_name = response.last_name;
+    user.firstname = response.first_name;
+    user.lastname = response.last_name;
     return user;
   }
 
@@ -57,8 +57,7 @@ export class FacebookLoginProvider extends BaseLoginProvider {
       FB.login((response: any) => {
         if (response.authResponse) {
           const accessToken = FB.getAuthResponse()['accessToken'];
-          FB.api('/me?fields=name,email,picture,last_name,first_name', (res: any) => {
-            console.log(res);
+          FB.api('/me?fields=name,email,picture,first_name,last_name', (res: any) => {
             resolve(FacebookLoginProvider.drawUser(Object.assign({}, {token: accessToken}, res)));
           });
         }

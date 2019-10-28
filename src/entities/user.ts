@@ -6,8 +6,8 @@ export class SocialUser {
   image: string;
   token?: string;
   idToken?: string;
-  first_name: string;
-  last_name: string;
+  firstname: string;
+  lastname: string;
 }
 
 export class LoginProviderClass {
