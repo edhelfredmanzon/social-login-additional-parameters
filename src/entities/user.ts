@@ -8,6 +8,7 @@ export class SocialUser {
   idToken?: string;
   firstname: string;
   lastname: string;
+  uid: string;
 }
 
 export class LoginProviderClass {
