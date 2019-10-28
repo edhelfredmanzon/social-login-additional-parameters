@@ -1,6 +1,6 @@
 {
   "name": "social-login-additional-parameters",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Angular 5 : Social Login (Facebook and Google)",
   "scripts": {
     "build": "gulp build",
@@ -9,7 +9,7 @@
     "docs:build": "compodoc -p tsconfig.json -n ng4-social-login -d docs --hideGenerator",
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
-    "lint": "tslint --type-check  src/*.ts"
+    "lint": "tslint --type-check  src/**/*.ts"
   },
   "repository": {
     "type": "git",
